@@ -1,11 +1,233 @@
-@import 'tailwindcss';
+/* --- Styles généraux --- */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Empêche le scroll horizontal lors de l'ouverture du menu */
+}
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+.flex-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilise 100% de la hauteur de la fenêtre */
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Mobile Header (Visible sur mobile) --- */
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 20px;
+}
+
+.mobile-header .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.mobile-header .logo img {
+    width: 35px;  /* Définit la largeur de l'image */
+    height: auto;  /* Maintient les proportions */
+}
+
+/* --- Bouton Hamburger --- */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1100; /* Assurez-vous qu'il est au-dessus du menu */
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Animation du Hamburger quand le menu est ouvert */
+.menu-toggle.open .hamburger {
+    background-color: transparent;
+}
+
+.menu-toggle.open .hamburger::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .hamburger::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* --- Mobile Navigation Menu (Caché par défaut) --- */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%); /* Cache le menu sur la gauche */
+    width: 100%; /* Prend toute la largeur de l'écran */
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 50px; /* Espace pour le header */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-nav {
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav.open {
+    transform: translateX(0); /* Affiche le menu en plein écran */
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.mobile-nav ul li:first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.mobile-nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-info-nav {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* --- Bouton "DEMANDER UN DEVIS" --- */
+.btn-primary-outline {
+    background-color: rgba(225, 225, 225, 0.32); /* Fond transparent */
+    color: white; /* Texte blanc */
+    border: 2px solid white; /* Cadre blanc de 2px */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px; /* Bords légèrement arrondis */
+    font-weight: bold;
+    cursor: pointer; /* Indique que c'est un élément cliquable */
+    transition: all 0.3s ease; /* Animation douce au survol */
+}
+
+main {
+    /* Utilise la propriété background-image pour insérer ton image */
+    background-image: url('../images/btp-premium.jpg');
+
+    /* Pour que l'image s'affiche correctement */
+    background-size: cover;          /* L'image couvrira tout le fond de l'élément */
+    background-position: center;     /* L'image sera centrée */
+    background-repeat: no-repeat;    /* Empêche l'image de se répéter */
+
+    /* Autres styles pour le contenu */
+    padding: 50px;
+    color: white; /* Pour que le texte soit lisible sur le fond */
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: auto; /* Pousse le footer vers le bas */
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* --- Media Query pour les écrans plus grands (Desktop/Tablet) --- */
+@media (min-width: 768px) {
+    .mobile-header, .menu-toggle, .mobile-nav {
+        display: none; /* Cache le menu hamburger et le menu mobile sur desktop */
+    }
+
+    /* Ici, tu mettrais ton header et ta navigation desktop */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: #f8f8f8;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header .logo {
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #333;
+    }
+    header nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li a {
+        padding: 0 15px;
+        text-decoration: none;
+        color: #333;
+    }
+    .header .logo img {
+        width: 150px; /* Plus grand sur les écrans de bureau */
+    }
 }

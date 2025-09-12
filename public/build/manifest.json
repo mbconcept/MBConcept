@@ -1,14 +1,22 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-jF790Tax.css",
+    "file": "assets/app-DOWsuV_q.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
       "app.css"
     ]
   },
+  "resources/images/btp-premium.jpg": {
+    "file": "assets/btp-premium-CqBTvO9f.jpg",
+    "src": "resources/images/btp-premium.jpg"
+  },
+  "resources/images/logo.svg": {
+    "file": "assets/logo-jtCnBBTF.svg",
+    "src": "resources/images/logo.svg"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-CFryQBuY.js",
+    "file": "assets/app-3_vg2gzg.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
