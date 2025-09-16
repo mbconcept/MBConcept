@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
 
+    // **AJOUTEZ CE BLOC DE CODE**
+    // Cette fonction ajuste la hauteur du menu mobile sur iOS
+    const adjustMobileNavHeight = () => {
+        if (mobileNav) {
+            mobileNav.style.height = `${window.innerHeight}px`;
+        }
+    };
+
+    // Appliquez la hauteur au chargement et lors du redimensionnement
+    adjustMobileNavHeight();
+    window.addEventListener('resize', adjustMobileNavHeight);
+
+
     if (menuToggle && mobileNav) {
         menuToggle.addEventListener('click', () => {
             mobileNav.classList.toggle('open');
