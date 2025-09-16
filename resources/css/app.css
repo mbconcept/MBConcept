@@ -6,10 +6,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden; /* Empêche le scroll horizontal lors de l'ouverture du menu */
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh; /* Utilise 100% de la hauteur de la fenêtre */
-    justify-content: space-between;
     color: #c4bcac;
     background-color: #252525;
 }
@@ -99,10 +95,10 @@ html, body {
     top: 0;
     left: 0;
     transform: translateX(-100%); /* Cache le menu sur la gauche */
-    width: 70%; /* Prend toute la largeur de l'écran */
-    height: 100%;
+    width: 70%;
+    height: 100dvh; /* Utilise la hauteur du viewport pour qu'il aille jusqu'en bas */
+    padding-top: 50px; /* Laissez cet espacement pour le header */
     background-color: #333;
-    padding-top: 50px; /* Espace pour le header */
     box-shadow: 2px 0 5px rgba(0,0,0,0.2);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
@@ -338,6 +334,11 @@ footer p {
 
 .social-icons a:hover {
     color: #a1744b; /* Change la couleur des icônes au survol */
+}
+
+a[href^="tel:"] {
+    color: black; /* ou n'importe quelle autre couleur, par exemple #333 pour un gris foncé */
+    text-decoration: none; /* Cela supprime le soulignement */
 }
 
 

@@ -19,5 +19,4 @@
         <p>Tel : 06 12 34 56 78</p>
         <p>Horaires : Lun-Ven 8h-18h</p>
     </div>
-
 </nav>
