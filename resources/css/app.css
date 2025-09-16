@@ -176,12 +176,13 @@ main {
     z-index: 1;
 }
 
-.title-section{
+.title-section {
     position: relative;
     background-image: url('../images/bg-mobile.jpg');
     background-size: cover;          /* L'image couvrira tout le fond de l'élément */
     background-position: center;     /* L'image sera centrée */
     background-repeat: no-repeat;    /* Empêche l'image de se répéter */
+    background-attachment: scroll; /* Changez "fixed" en "scroll" */
     height: 100dvh;
 }
 
