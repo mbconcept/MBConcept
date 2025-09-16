@@ -104,7 +104,7 @@ html, body {
     left: 0;
     transform: translateX(-100%); /* Cache le menu sur la gauche */
     width: 70%;
-    height: 100dvh; /* Utilise la hauteur du viewport pour qu'il aille jusqu'en bas */
+    height: 100vh; /* Utilise la hauteur du viewport pour qu'il aille jusqu'en bas */
     padding-top: var(--header-height); /* Laissez cet espacement pour le header */
     background-color: #333;
     box-shadow: 2px 0 5px rgba(0,0,0,0.2);
@@ -201,102 +201,12 @@ main {
     margin-top: 0px;
 }
 
-.info-section{
-    background-color: #706f6c;
-    height: 300px;
-}
+.link-section {
 
-.info-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.info-content h1 {
-    font-size: 3em;
-    margin: 0px;
-}
-
-.info-content p {
-    margin-top: 0px;
-}
-
-.solution-section{
-    background-color: #a6a6a6;
-    height: 300px;
-}
-
-.solution-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.solution-content h1 {
-    font-size: 3em;
-    margin: 0px;
-}
-
-.solution-content p {
-    margin-top: 0px;
-}
-
-.realisation-section{
-    background-color: #252525;
-    height: 300px;
-}
-
-.realisation-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.realisation-content h1 {
-    font-size: 3em;
-    margin: 0px;
-}
-
-.realisation-content p {
-    margin-top: 0px;
-}
-
-.contact-section{
-    background-color: rgba(173, 173, 173, 0.56);
-    height: 300px;
-}
-
-.contact-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.contact-content h1 {
-    font-size: 3em;
-    margin: 0px;
-}
-
-.contact-content p {
-    margin-top: 0px;
 }
 
 .link-section {
-    color: white; /* Texte et soulignement blancs */
-    text-decoration: underline;
-    font-weight: bold;
     cursor: pointer;
-}
-
-.link-section {
     display: inline-block;
     padding: 15px 25px; /* Moins de largeur */
     text-decoration: none;
@@ -304,14 +214,10 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-
-    /* Couleurs et bordures avec transparence */
     background-color: rgba(161, 116, 75, 0.8);
     color: #d7d0c8;
     border: 2px solid rgba(161, 116, 75, 0.8);
     transition: all 0.3s ease;
-
-    /* --- AJOUT OU MODIFICATION ICI --- */
     border-radius: 50px; /* Ou une valeur élevée comme 9999px pour un effet pilule */
 }
 
