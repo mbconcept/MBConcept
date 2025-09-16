@@ -8,8 +8,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'resources/images/logo.svg',
-                'resources/images/btp-premium.jpg',
+                'resources/images/logo-fin.svg',
+                'resources/images/bg-mobile.jpg',
             ],
             refresh: true,
         }),

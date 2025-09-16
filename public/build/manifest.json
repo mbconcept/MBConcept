@@ -1,19 +1,19 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-DOWsuV_q.css",
+    "file": "assets/app-BgqTovn4.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
       "app.css"
     ]
   },
-  "resources/images/btp-premium.jpg": {
-    "file": "assets/btp-premium-CqBTvO9f.jpg",
-    "src": "resources/images/btp-premium.jpg"
+  "resources/images/bg-mobile.jpg": {
+    "file": "assets/bg-mobile-EZV5nLyP.jpg",
+    "src": "resources/images/bg-mobile.jpg"
   },
-  "resources/images/logo.svg": {
-    "file": "assets/logo-jtCnBBTF.svg",
-    "src": "resources/images/logo.svg"
+  "resources/images/logo-fin.svg": {
+    "file": "assets/logo-fin-CP-rZIyC.svg",
+    "src": "resources/images/logo-fin.svg"
   },
   "resources/js/app.js": {
     "file": "assets/app-3_vg2gzg.js",

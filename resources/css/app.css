@@ -1,13 +1,12 @@
 /* --- Styles généraux --- */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden; /* Empêche le scroll horizontal lors de l'ouverture du menu */
-}
-
-.flex-body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Utilise 100% de la hauteur de la fenêtre */
+    justify-content: space-between;
+    color: #c4bcac;
 }
 
 html, body {
@@ -21,24 +20,20 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #f8f8f8;
+    padding: 10px 20px;
+    background-color: #252525;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 20px;
-}
-
-.mobile-header .logo {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #333;
 }
 
 .mobile-header .logo img {
-    width: 35px;  /* Définit la largeur de l'image */
-    height: auto;  /* Maintient les proportions */
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0; /* Important pour les images dans les flexbox */
+    width: 40px;
 }
 
 /* --- Bouton Hamburger --- */
@@ -99,10 +94,9 @@ html, body {
     top: 0;
     left: 0;
     transform: translateX(-100%); /* Cache le menu sur la gauche */
-    width: 100%; /* Prend toute la largeur de l'écran */
+    width: 70%; /* Prend toute la largeur de l'écran */
     height: 100%;
     background-color: #333;
-    color: white;
     padding-top: 50px; /* Espace pour le header */
     box-shadow: 2px 0 5px rgba(0,0,0,0.2);
     transition: transform 0.3s ease-in-out;
@@ -136,7 +130,7 @@ html, body {
 .mobile-nav li a {
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: #c4bcac;
     text-decoration: none;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -149,50 +143,196 @@ html, body {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* --- Bouton "DEMANDER UN DEVIS" --- */
-.btn-primary-outline {
-    background-color: rgba(225, 225, 225, 0.32); /* Fond transparent */
-    color: white; /* Texte blanc */
-    border: 2px solid white; /* Cadre blanc de 2px */
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px; /* Bords légèrement arrondis */
-    font-weight: bold;
-    cursor: pointer; /* Indique que c'est un élément cliquable */
-    transition: all 0.3s ease; /* Animation douce au survol */
-}
+/* MAIN */
 
 main {
-    /* Utilise la propriété background-image pour insérer ton image */
-    background-image: url('../images/btp-premium.jpg');
+    /* Autres styles pour le contenu */
+    text-align: center;
+    flex: 1;
+}
 
-    /* Pour que l'image s'affiche correctement */
+.title-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Calque noir à 50% d'opacité */
+}
+
+/* Assurez-vous que le contenu (titre, bouton) a un z-index plus élevé */
+.title-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.title-section{
+    position: relative;
+    background-image: url('../images/bg-mobile.jpg');
     background-size: cover;          /* L'image couvrira tout le fond de l'élément */
     background-position: center;     /* L'image sera centrée */
     background-repeat: no-repeat;    /* Empêche l'image de se répéter */
+    height: 100%;
+}
 
-    /* Autres styles pour le contenu */
-    padding: 50px;
-    color: white; /* Pour que le texte soit lisible sur le fond */
-    text-align: center;
-    height: 250px;
+.title-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-footer {
-    margin-top: auto; /* Pousse le footer vers le bas */
-    text-align: center;
-}
-
-.hero-content {
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     height: 100%;
+}
+
+.title-content h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+.title-content p {
+    margin-top: 0px;
+}
+
+.info-section{
+    background-color: #706f6c;
+    height: 300px;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.info-content h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+.info-content p {
+    margin-top: 0px;
+}
+
+.solution-section{
+    background-color: #a6a6a6;
+    height: 300px;
+}
+
+.solution-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.solution-content h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+.solution-content p {
+    margin-top: 0px;
+}
+
+.realisation-section{
+    background-color: #252525;
+    height: 300px;
+}
+
+.realisation-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.realisation-content h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+.realisation-content p {
+    margin-top: 0px;
+}
+
+.contact-section{
+    background-color: rgba(173, 173, 173, 0.56);
+    height: 300px;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact-content h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+.contact-content p {
+    margin-top: 0px;
+}
+
+.link-section {
+    color: white; /* Texte et soulignement blancs */
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link-section {
+    display: inline-block;
+    padding: 15px 15px; /* Moins de largeur */
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    /* Couleurs et bordures avec transparence */
+    background-color: rgba(161, 116, 75, 0.8); /* Transparence ajoutée (0.8) */
+    color: #d7d0c8;
+    border-radius: 5px;
+    border: 2px solid rgba(161, 116, 75, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #252525;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center; /* Pour centrer le texte sur les navigateurs plus anciens */
+    padding: 15px 0; /* Ajoute un peu de hauteur pour que le contenu ne soit pas collé */
+
+    /* Les propriétés qui centrent parfaitement le contenu */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments à la verticale */
+    justify-content: center; /* Centre le contenu sur l'axe vertical */
+    align-items: center; /* Centre le contenu sur l'axe horizontal */
+}
+
+footer p {
+    margin: 5px 0px;
+}
+
+.social-icons a {
+    color: #c4bcac; /* Couleur des icônes */
+    font-size: 24px; /* Taille des icônes */
+    margin: 0 10px; /* Espace entre les icônes */
+    transition: color 0.3s; /* Effet de transition au survol */
+}
+
+.social-icons a:hover {
+    color: #a1744b; /* Change la couleur des icônes au survol */
 }
 
 
@@ -208,7 +348,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 15px 40px;
-        background-color: #f8f8f8;
+        background-color: #252525;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header .logo {
@@ -231,3 +371,112 @@ footer {
         width: 150px; /* Plus grand sur les écrans de bureau */
     }
 }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
