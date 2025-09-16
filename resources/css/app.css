@@ -102,10 +102,9 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     transform: translateX(-100%);
     width: 70%;
-    height: 100vh; /* Utilisez vh comme valeur de secours */
-    height: 100dvh; /* C'est la propriété clé. La plupart des navigateurs récents la supportent. */
     background-color: #333;
     padding-top: var(--header-height); /* Laissez de la place pour le header */
     box-shadow: 2px 0 5px rgba(0,0,0,0.2);
