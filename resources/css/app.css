@@ -13,6 +13,7 @@ body {
     color: #c4bcac;
     background-color: #252525;
     -webkit-tap-highlight-color: transparent;
+    position: relative;
 }
 
 html, body {
@@ -99,10 +100,10 @@ html, body {
 
 /* --- Mobile Navigation Menu (Caché par défaut) --- */
 .mobile-nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 100dvh;
+    height: 100%;
     transform: translateX(-100%);
     width: 70%;
     background-color: #333;
@@ -155,7 +156,7 @@ html, body {
 
 main {
     /* Autres styles pour le contenu */
-    min-height: 100dvh;
+    min-height: 100vh;
     text-align: center;
     flex: 1;
 }
@@ -183,7 +184,7 @@ main {
     background-position: center;     /* L'image sera centrée */
     background-repeat: no-repeat;    /* Empêche l'image de se répéter */
     background-attachment: scroll; /* Changez "fixed" en "scroll" */
-    height: 100dvh;
+    height: 100vh;
 }
 
 .title-content {
@@ -254,10 +255,8 @@ footer p {
 }
 
 a[href^="tel:"] {
-    color: black; /* ou n'importe quelle autre couleur, par exemple #333 pour un gris foncé */
-    text-decoration: none; /* Cela supprime le soulignement */
+    color: #c4bcac; /* ou n'importe quelle autre couleur, par exemple #333 pour un gris foncé */
 }
-
 
 /* --- Media Query pour les écrans plus grands (Desktop/Tablet) --- */
 @media (min-width: 768px) {
