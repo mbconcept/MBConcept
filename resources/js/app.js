@@ -20,6 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    document.addEventListener('click', (event) => {
+        const isClickInsideMenu = mobileNav.contains(event.target);
+        const isClickOnToggle = menuToggle.contains(event.target);
+
+        // Si le menu est ouvert et que le clic est en dehors du menu ET du bouton
+        if (mobileNav.classList.contains('open') && !isClickInsideMenu && !isClickOnToggle) {
+            mobileNav.classList.remove('open');
+            menuToggle.classList.remove('open');
+        }
+    });
+
     const flashMessage = document.getElementById('flash-message');
 
     if (flashMessage) {

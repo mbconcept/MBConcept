@@ -11,10 +11,11 @@
 
 <nav class="mobile-nav">
     <ul>
-        <li><a href="#">À PROPOS</a></li>
-        <li><a href="#">SOLUTIONS</a></li>
-        <li><a href="#">RÉALISATIONS</a></li>
-        <li><a href="{{route('estimate')}}">CONTACTS</a></li>
+        <li><a href="{{route('home')}}">ACCUEIL</a></li>
+        <li><a href="{{route('infos')}}">À PROPOS</a></li>
+        <!--<li><a href="{{route('solutions')}}">SOLUTIONS</a></li>
+        <li><a href="{{route('realisations')}}">RÉALISATIONS</a></li>-->
+        <li><a href="{{ route('contact', ['type' => 'contact']) }}">CONTACTS</a></li>
     </ul>
     <div class="contact-info-nav">
         <p>Tel : 06 12 34 56 78</p>

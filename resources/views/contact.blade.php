@@ -3,12 +3,17 @@
 @section('title', 'Contact - MB CONCEPT')
 
 @section('content')
-    <section class="estimate-section">
+    <section class="contact-section">
         <div class="form-container">
-            <h1>Obtenez votre devis gratuit</h1>
-            <p>Laissez-nous vos coordonnées, et nous vous rappellerons dans les plus brefs délais pour discuter de votre projet.</p>
+            @if($type === 'contact')
+                <h1>Contactez-nous</h1>
+                <p>Posez-nous vos questions, nous vous répondrons dans les plus brefs délais.</p>
+            @else
+                <h1>Obtenez votre devis gratuit</h1>
+                <p>Laissez-nous vos coordonnées, et nous vous rappellerons pour discuter de votre projet.</p>
+            @endif
 
-            <form action="{{ route('estimate.submit') }}" method="POST">
+            <form action="{{ route('contact.submit') }}" method="POST">
                 @csrf
 
                 <div class="form-group">

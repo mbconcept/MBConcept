@@ -3,21 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\EstimateRequest;
-use App\Mail\EstimateMail;
+use App\Http\Requests\ContactRequest;
+use App\Mail\ContactMail;
 use App\Mail\UserConfirmationMail;
 use Illuminate\Support\Facades\Mail;
 use Exception; // Importez la classe Exception
 
-class EstimateController extends Controller
+class ContactController extends Controller
 {
-    public function submit(EstimateRequest $request)
+    public function submit(ContactRequest $request)
     {
         $data = $request->validated();
 
         try {
             // Tente d'envoyer le premier e-mail à l'entreprise
-            //Mail::to('votre_email@exemple.com')->send(new EstimateMail($data));
+            //Mail::to('votre_email@exemple.com')->send(new ContactMail($data));
 
             // Si le premier e-mail réussit, tente d'envoyer le deuxième au client
             //Mail::to($data['email'])->send(new UserConfirmationMail($data));
