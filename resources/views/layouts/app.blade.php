@@ -12,6 +12,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
+        @if(session('success') || session('error'))
+            <div id="flash-message" class="flash-message @if(session('success')) flash-message-success @else flash-message-error @endif">
+                {{ session('success') ?? session('error') }}
+            </div>
+        @endif
+
         @include('includes.header')
 
         <main>

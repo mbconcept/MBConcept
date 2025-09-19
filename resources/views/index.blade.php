@@ -9,7 +9,7 @@
                 <h1>MB CONCEPT</h1>
                 <p>Votre vision, notre chef-d'œuvre.</p>
             </div>
-            <a href="#" class="link-section">Obtenez votre devis gratuit</a>
+            <a href="{{route('estimate')}}" class="link-section">Obtenez votre devis gratuit</a>
         </div>
     </section>
 @endsection

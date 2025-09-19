@@ -19,4 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('no-scroll');
         }
     });
+
+    const flashMessage = document.getElementById('flash-message');
+
+    if (flashMessage) {
+        // Rendre le message visible
+        setTimeout(() => {
+            flashMessage.classList.add('visible');
+        }, 100); // Court délai pour permettre la transition
+
+        // Faire disparaître le message après 3 secondes
+        setTimeout(() => {
+            flashMessage.classList.remove('visible');
+        }, 3000); // Ajustez la durée ici (en millisecondes)
+    }
 });
