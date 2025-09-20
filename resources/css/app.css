@@ -260,7 +260,7 @@ footer a{
     color: #a1744b; /* Change la couleur des icônes au survol */
 }
 
-a[href^="tel:"] {
+a[href^="tel:"], a[href^="mailto:"] {
     color: #c4bcac; /* ou n'importe quelle autre couleur, par exemple #333 pour un gris foncé */
 }
 

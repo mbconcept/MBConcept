@@ -19,7 +19,7 @@
     </ul>
     <div class="contact-info-nav">
         <p>Tel : 06 12 34 56 78</p>
-        <p>b.martins@mbconcept-pro.fr</p>
+        <p><a href="mailto:contact@mbconcept-pro.fr">contact@mbconcept-pro.fr</a></p>
         <p>Horaires : Lun-Ven 8h-18h</p>
     </div>
 </nav>

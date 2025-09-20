@@ -27,7 +27,7 @@ class UserConfirmationMail extends Mailable
     {
         return new Envelope(
             subject: 'Confirmation de votre demande de devis',
-            from: new \Illuminate\Mail\Mailables\Address('b.martins@mbconcept-pro.fr', 'MB CONCEPT'),
+            from: new \Illuminate\Mail\Mailables\Address('contact@mbconcept-pro.fr', 'MB CONCEPT'),
         );
     }
 
