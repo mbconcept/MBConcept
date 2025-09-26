@@ -1,0 +1,105 @@
+.about-section {
+    padding: 40px 20px;
+    background-color: #252525;
+    position: relative;
+    background-image: url('../images/bg-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Calque noir à 50% d'opacité */
+}
+
+.about-container {
+    position: relative;
+    z-index: 1; /* S'assure que le contenu est au-dessus du calque */
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(45, 45, 45, 0.8); /* Fond semi-transparent */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #c4bcac;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about-container p {
+    font-size: 1em;
+    line-height: 1.8;
+    width: 100%;
+    text-align: justify;
+}
+
+.about-container h2 {
+    font-size: 1.8em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-info .info-group p{
+    margin: 5px 0px;
+}
+
+.contact-info .info-group:last-child {
+    margin-bottom: 16px;
+}
+
+.contact-info .info-group a {
+    color: #a1744b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info .info-group a:hover {
+    color: #c4bcac;
+}
+
+.social-icons a {
+    color: #c4bcac;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #a1744b;
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        padding-top: 105px;
+        padding-bottom: 25px;
+        background-image: url('../images/bg-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        height: 100%;
+        display: block;
+    }
+
+    .about-container p {
+        padding: 0px 20px;
+    }
+
+    .divider {
+        margin: 0px 20px;
+    }
+}

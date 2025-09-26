@@ -11,6 +11,8 @@
                 Notre approche est fondée sur la qualité, la transparence et l'écoute. Nous croyons que chaque projet est unique et mérite une attention particulière. En travaillant main dans la main avec vous, nous nous assurons que chaque détail est pris en compte, pour un résultat qui dépasse vos attentes. Notre professionnalisme et notre rigueur sont les gages d'un partenariat de confiance.
             </p>
 
+            <hr class="divider">
+
             <div class="contact-info">
                 <h2>Nous contacter</h2>
                 <div class="info-group">
@@ -19,6 +21,8 @@
                     <p><strong>Horaires :</strong> Lun-Ven 8h-18h</p>
                 </div>
             </div>
+
+            <hr class="divider">
 
             <div class="social-icons">
                 <h2>Suivez-nous</h2>

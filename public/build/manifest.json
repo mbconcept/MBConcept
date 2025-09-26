@@ -1,11 +1,15 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-C2XrzD3h.css",
+    "file": "assets/app-DmChNOe2.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
       "app.css"
     ]
+  },
+  "resources/images/bg-desktop.jpg": {
+    "file": "assets/bg-desktop-Gc51VDkP.jpg",
+    "src": "resources/images/bg-desktop.jpg"
   },
   "resources/images/bg-mobile.jpg": {
     "file": "assets/bg-mobile-EZV5nLyP.jpg",

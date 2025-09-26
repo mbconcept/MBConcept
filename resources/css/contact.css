@@ -1,0 +1,115 @@
+.contact-section {
+    position: relative;
+    background-image: url('../images/bg-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(45, 45, 45, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h1,
+.form-container p,
+.form-group label {
+    color: #d7d0c8;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #666;
+    background-color: #383838;
+    color: #d7d0c8;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    width: 90%;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: rgba(161, 116, 75, 0.8);
+    color: #d7d0c8;
+    border: 2px solid rgba(161, 116, 75, 0.8);
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #8a643f;
+}
+
+@media (min-width: 768px) {
+    .contact-section {
+        padding-top: 105px;
+        padding-bottom: 25px;
+        background-image: url('../images/bg-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        height: 100%;
+        display: block;
+    }
+
+    .form-container {
+        margin: 0px auto;
+    }
+
+    .submit-button {
+        background-color: rgba(161, 116, 75, 0.17);
+    }
+
+    .submit-button:hover {
+        background-color: rgba(161, 116, 75, 0.8);
+    }
+}

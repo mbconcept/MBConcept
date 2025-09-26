@@ -7,14 +7,20 @@
             <img src="{{ Vite::asset('resources/images/logo-fin.svg') }}" alt="Logo de l'entreprise" width="100" height="auto">
         </a>
     </div>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="{{ route('home') }}">Accueil</a></li>
+            <li><a href="{{ route('infos') }}">À Propos</a></li>
+            <li><a href="{{ route('contact', ['type' => 'contact']) }}">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <nav class="mobile-nav">
     <ul>
         <li><a href="{{route('home')}}">ACCUEIL</a></li>
         <li><a href="{{route('infos')}}">À PROPOS</a></li>
-        <!--<li><a href="{{route('solutions')}}">SOLUTIONS</a></li>
-        <li><a href="{{route('realisations')}}">RÉALISATIONS</a></li>-->
         <li><a href="{{ route('contact', ['type' => 'contact']) }}">CONTACTS</a></li>
     </ul>
     <div class="contact-info-nav">

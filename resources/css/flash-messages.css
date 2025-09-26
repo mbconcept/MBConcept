@@ -1,0 +1,29 @@
+.flash-message {
+    width: 70%;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #d7d0c8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.flash-message-success {
+    background-color: rgba(44, 86, 31, 0.8); /* Fond semi-transparent */;
+}
+
+/* Nouveau style pour le message d'erreur */
+.flash-message-error {
+    background-color: rgba(105, 31, 31, 0.8);
+}
+
+.flash-message.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}

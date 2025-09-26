@@ -10,6 +10,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/images/logo-fin.svg',
                 'resources/images/bg-mobile.jpg',
+                'resources/images/bg-desktop.jpg',
             ],
             refresh: true,
         }),
