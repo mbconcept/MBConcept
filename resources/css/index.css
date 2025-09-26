@@ -15,7 +15,7 @@
 
 .title-section {
     position: relative;
-    background-image: url('../images/bg-mobile.jpg');
+    background-image: url('../images/bg-mobile.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,8 +63,9 @@
     }
 
     .title-section {
+        background-color: #252525;
         position: relative;
-        background-image: url('../images/bg-desktop.jpg');
+        background-image: url('../images/bg-desktop.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

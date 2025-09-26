@@ -1,6 +1,6 @@
 .contact-section {
     position: relative;
-    background-image: url('../images/bg-mobile.jpg');
+    background-image: url('../images/bg-mobile.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@
     .contact-section {
         padding-top: 105px;
         padding-bottom: 25px;
-        background-image: url('../images/bg-desktop.jpg');
+        background-image: url('../images/bg-desktop.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

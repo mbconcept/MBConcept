@@ -1,19 +1,19 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-DbT6hC6L.css",
+    "file": "assets/app-CG9a0JgF.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
       "app.css"
     ]
   },
-  "resources/images/bg-desktop.jpg": {
-    "file": "assets/bg-desktop-BCf2KSIZ.jpg",
-    "src": "resources/images/bg-desktop.jpg"
+  "resources/images/bg-desktop.webp": {
+    "file": "assets/bg-desktop-Dz_C4aXV.webp",
+    "src": "resources/images/bg-desktop.webp"
   },
-  "resources/images/bg-mobile.jpg": {
-    "file": "assets/bg-mobile-D820oQRA.jpg",
-    "src": "resources/images/bg-mobile.jpg"
+  "resources/images/bg-mobile.webp": {
+    "file": "assets/bg-mobile-BmiN32-f.webp",
+    "src": "resources/images/bg-mobile.webp"
   },
   "resources/images/logo-fin.svg": {
     "file": "assets/logo-fin-CP-rZIyC.svg",
