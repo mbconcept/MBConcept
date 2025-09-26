@@ -10,6 +10,8 @@
         </style>
         <title>@yield('title')</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="preload" href="{{ Vite::asset('resources/images/bg-desktop.jpg') }}" as="image">
+        <link rel="preload" href="{{ Vite::asset('resources/images/bg-mobile.jpg') }}" as="image" media="(max-width: 767px)">
     </head>
     <body>
         @if(session('success') || session('error'))
