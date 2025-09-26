@@ -63,13 +63,15 @@
     }
 
     .title-section {
-        background-color: #252525;
-        position: relative;
+        background-attachment: scroll;
         background-image: url('../images/bg-desktop.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
+        background-color: #252525;
+        height: auto;
+        display: block;
         min-height: 100%;
     }
 

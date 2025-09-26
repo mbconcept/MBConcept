@@ -96,8 +96,11 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: scroll;
-        height: 100%;
+        background-attachment: fixed;
+        background-color: #252525;
+
+        height: auto;
+        min-height: 100vh;
         display: block;
     }
 
