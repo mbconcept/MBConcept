@@ -3,8 +3,8 @@
 @import './index.css';
 @import './infos.css';
 @import './legal-notices.css';
-@import './realisations.css';
-@import './solutions.css';
+@import './individuals.css';
+@import './companies.css';
 @import './includes/footer.css';
 @import './includes/header.css';
 
@@ -30,123 +30,149 @@ html, body {
 }
 
 main {
+    background-image: url('../images/bg-mobile.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
     flex-grow: 1;
 }
 
-a[href^="tel:"], a[href^="mailto:"] {
+a[href^='tel:'], a[href^='mailto:'] {
     color: #c4bcac;
 }
 
-a[href^="mailto:"] {
+a[href^='mailto:'] {
     text-decoration: underline;
+}
+
+.divider {
+    margin: 0px auto;
+    border-radius: 15px;
+    border-color: #c4bcac;
+    border-style: solid;
+}
+
+@media (min-width: 768px) {
+    main {
+        background-image: url('../images/bg-desktop.webp');
+    }
+
+    .divider {
+        width: 60%;
+        margin: 0px auto;
+        border-radius: 15px;
+        border-color: #c4bcac;
+        border-style: solid;
+    }
 }
 
 /* POLICE */
 .poppins-thin {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-style: normal;
 }
 
 .poppins-extralight {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-style: normal;
 }
 
 .poppins-light {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 .poppins-regular {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .poppins-medium {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .poppins-semibold {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 .poppins-bold {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-style: normal;
 }
 
 .poppins-black {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
 .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-style: italic;
 }
 
 .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-style: italic;
 }
 
 .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-style: italic;
 }
 
 .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
 .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: italic;
 }
 
 .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: italic;
 }
 
 .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-style: italic;
 }
 
 .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-style: italic;
 }
 
 .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-style: italic;
 }

@@ -175,5 +175,12 @@
         color: #a1744b;
         text-decoration: underline;
     }
+
+    .desktop-nav ul li a.active-link {
+        color: #a1744b;
+        text-decoration: underline;
+        cursor: default;
+        pointer-events: none;
+    }
 }
 

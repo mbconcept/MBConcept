@@ -17,13 +17,13 @@ Route::get('/infos', function () {
     return view('infos');
 })->name('infos');
 
-Route::get('/solutions', function () {
-    return view('solutions');
-})->name('solutions');
+Route::get('/companies', function () {
+    return view('companies');
+})->name('companies');
 
-Route::get('/réalisations', function () {
-    return view('realisations');
-})->name('realisations');
+Route::get('/individuals', function () {
+    return view('individuals');
+})->name('individuals');
 
 Route::get('/mentions-legales', function () {
     return view('legal-notices');

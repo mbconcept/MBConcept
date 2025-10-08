@@ -10,9 +10,42 @@
 
     <nav class="desktop-nav">
         <ul>
-            <li><a href="{{ route('home') }}">Accueil</a></li>
-            <li><a href="{{ route('infos') }}">À Propos</a></li>
-            <li><a href="{{ route('contact', ['type' => 'contact']) }}">Contact</a></li>
+            <li>
+                <a href="{{ route('home') }}"
+                   class="{{ request()->routeIs('home') ? 'active-link' : '' }}">
+                    Accueil
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('infos') }}"
+                   class="{{ request()->routeIs('infos') ? 'active-link' : '' }}">
+                    À Propos
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('companies') }}"
+                   class="{{ request()->routeIs('companies') ? 'active-link' : '' }}">
+                    Professionnels
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('individuals') }}"
+                   class="{{ request()->routeIs('individuals') ? 'active-link' : '' }}">
+                    Particuliers
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('contact', ['type' => 'contact']) }}"
+                   class="{{ request()->routeIs('contact') ? 'active-link' : '' }}">
+                    Contact
+                </a>
+            </li>
+
+
         </ul>
     </nav>
 </header>
@@ -21,6 +54,8 @@
     <ul>
         <li><a href="{{route('home')}}">ACCUEIL</a></li>
         <li><a href="{{route('infos')}}">À PROPOS</a></li>
+        <li><a href="{{route('companies')}}">PROFESSIONNELS</a></li>
+        <li><a href="{{route('individuals')}}">PARTICULIERS</a></li>
         <li><a href="{{ route('contact', ['type' => 'contact']) }}">CONTACTS</a></li>
     </ul>
     <div class="contact-info-nav">

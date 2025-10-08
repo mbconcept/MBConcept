@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(82, 50, 23, 0.27);
 }
 
 .title-section > * {
@@ -15,11 +15,6 @@
 
 .title-section {
     position: relative;
-    background-image: url('../images/bg-mobile.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
     height: 100%;
 }
 
@@ -60,6 +55,10 @@
     .title-content {
         justify-content: space-evenly;
         min-height: 100vh;
+    }
+
+    .title-section::before {
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     .title-section {
