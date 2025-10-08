@@ -3,6 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="@yield('title') | MB CONCEPT - Rénovation Bâtiment">
+        <meta property="og:url" content="{{ url()->current() }}">
+        <meta property="og:description" content="@yield('description', 'Spécialiste de la rénovation tous corps d\'état pour professionnels et particuliers.')">
+        <meta property="og:image" content="{{ Vite::asset('resources/images/logo-fin.png') }}">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
         <link rel="icon" type="image/svg+xml" href="{{ Vite::asset('resources/images/logo-fin.svg') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <style>

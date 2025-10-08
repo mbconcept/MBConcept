@@ -30,13 +30,22 @@ html, body {
 }
 
 main {
+    text-align: center;
+    flex-grow: 1;
+}
+
+main::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url('../images/bg-mobile.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center;
-    flex-grow: 1;
 }
 
 a[href^='tel:'], a[href^='mailto:'] {
@@ -55,7 +64,7 @@ a[href^='mailto:'] {
 }
 
 @media (min-width: 768px) {
-    main {
+    main::before {
         background-image: url('../images/bg-desktop.webp');
     }
 

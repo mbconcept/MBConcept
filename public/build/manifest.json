@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-BVw05kKu.css",
+    "file": "assets/app-85PxTkzr.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -14,6 +14,10 @@
   "resources/images/bg-mobile.webp": {
     "file": "assets/bg-mobile-DLIt75is.webp",
     "src": "resources/images/bg-mobile.webp"
+  },
+  "resources/images/logo-fin.png": {
+    "file": "assets/logo-fin-BRhAy-eB.png",
+    "src": "resources/images/logo-fin.png"
   },
   "resources/images/logo-fin.svg": {
     "file": "assets/logo-fin-CP-rZIyC.svg",

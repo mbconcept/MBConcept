@@ -9,6 +9,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/images/logo-fin.svg',
+                'resources/images/logo-fin.png',
                 'resources/images/bg-mobile.webp',
                 'resources/images/bg-desktop.webp',
                 'resources/images/renovation-part.webp',
