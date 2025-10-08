@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CajfVAO_.css",
+    "file": "assets/app-BVw05kKu.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -12,12 +12,32 @@
     "src": "resources/images/bg-desktop.webp"
   },
   "resources/images/bg-mobile.webp": {
-    "file": "assets/bg-mobile-BmiN32-f.webp",
+    "file": "assets/bg-mobile-DLIt75is.webp",
     "src": "resources/images/bg-mobile.webp"
   },
   "resources/images/logo-fin.svg": {
     "file": "assets/logo-fin-CP-rZIyC.svg",
     "src": "resources/images/logo-fin.svg"
+  },
+  "resources/images/renovation-part.webp": {
+    "file": "assets/renovation-part-BM9cyn44.webp",
+    "src": "resources/images/renovation-part.webp"
+  },
+  "resources/images/renovation-part2.webp": {
+    "file": "assets/renovation-part2-DRpIGCE8.webp",
+    "src": "resources/images/renovation-part2.webp"
+  },
+  "resources/images/renovation-part3.webp": {
+    "file": "assets/renovation-part3-C3PULhZf.webp",
+    "src": "resources/images/renovation-part3.webp"
+  },
+  "resources/images/renovation-pro.webp": {
+    "file": "assets/renovation-pro-DFJSgdXZ.webp",
+    "src": "resources/images/renovation-pro.webp"
+  },
+  "resources/images/renovation-pro2.webp": {
+    "file": "assets/renovation-pro2-Dm54Vijs.webp",
+    "src": "resources/images/renovation-pro2.webp"
   },
   "resources/js/app.js": {
     "file": "assets/app-CI5OEI5S.js",
