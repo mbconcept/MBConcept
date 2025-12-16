@@ -4,7 +4,7 @@
     </button>
     <div class="logo">
         <a href="{{ route('home') }}">
-            <img src="{{ Vite::asset('resources/images/logo-fin.svg') }}" alt="Logo de l'entreprise" width="100" height="auto">
+            <img src="{{ Vite::asset('resources/images/logo-fin.svg') }}" alt="Logo de l'entreprise">
         </a>
     </div>
 
