@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="google-site-verification" content="21YoYYolLEQ5DtcVy5GWwSXkzP0-m-AK6f8rYoBfyeU" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="@yield('description', "Spécialiste de la rénovation tous corps d'état pour professionnels et particuliers.")">
         <meta property="og:title" content="@yield('title') | MB CONCEPT - Rénovation Bâtiment">
